@@ -13,6 +13,10 @@ app.use(bodyParser.urlencoded({
 
 mongoose.connect('mongodb+srv://balta:balta@ndstr-8vwdy.gcp.mongodb.net/test?retryWrites=true&w=majority');
 
+//Carrega os Modelos
+const Product = require('./models/product');
+
+
 //Carrega as Rotas
 const index = require('./routes/index-route');
 const products = require('./routes/product-route');
