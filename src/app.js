@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://balta:balta@ndstr-8vwdy.gcp.mongodb.net/test?ret
 
 //Carrega os Modelos
 const Product = require('./models/product');
-
+const Custumer = require('./models/customer');
 
 //Carrega as Rotas
 const index = require('./routes/index-route');

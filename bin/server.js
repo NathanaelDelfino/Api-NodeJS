@@ -10,15 +10,7 @@ app.set('port', port);
 const server = http.createServer(app);
 const router = express.Router();
 
-
-var route = router.get('/', (req,res,next) => {
-    res.status(200).send({
-        title:"Node Store API",
-        version: "0.0.1"
-    });
-});
-
-app.use('/', route);
+app.use('/', router);
 server.listen(port);
 server.on('error',onError);
 server.on('listening',onListening);
