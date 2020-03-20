@@ -11,29 +11,34 @@ const schema = new Schema({
     },
     slug: {
         type: String,
-        required: [true,'O Slug é obrigatório!'],
+        required: [true, 'O Slug é obrigatório!'],
         trim: true,
         index: true,
         unique: true
     },
-    description:{
+    description: {
         type: String,
-        required:true,
-        trim:true
+        required: true,
+        trim: true
     },
-    price:{
-        type:Number,
-        required:true
+    price: {
+        type: Number,
+        required: true
     },
-    active:{
-        type:Boolean,
-        required:true,
-        default:true
+    active: {
+        type: Boolean,
+        required: true,
+        default: true
     },
-    tags:[{
+    tags: [{
         type: String,
         required: true
-    }]
+    }],
+    image: {
+        type: String,
+        required: true,
+        trim: true
+    },
 });
 
 
