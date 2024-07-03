@@ -1,7 +1,7 @@
 'user strict'
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const config = require('./config')
 const app = express();
 //const router = express.Router();
@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-mongoose.connect(config.connectionString);
+// mongoose.connect(config.connectionString);
 
 //Carrega os Modelos
 const Product = require('./models/product');
